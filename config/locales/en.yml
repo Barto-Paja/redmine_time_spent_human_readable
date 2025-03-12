@@ -1,0 +1,3 @@
+en:
+  redmine_time_spent_humand_readable:
+    plugin_description: "Human-readable format for time tracking in Redmine."

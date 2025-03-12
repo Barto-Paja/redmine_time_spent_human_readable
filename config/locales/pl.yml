@@ -1,0 +1,3 @@
+pl:
+  redmine_time_spent_humand_readable:
+    plugin_description: "Wyświetlanie czasu w formacie HH:MM."
