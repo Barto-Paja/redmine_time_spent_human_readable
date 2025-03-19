@@ -4,7 +4,7 @@ require 'redmine'
 Redmine::Plugin.register :redmine_time_spent_human_readable do
     name 'Redmine Time Spent Human Readable Plugin'
     author 'Bartosz Pajewski'
-    description l('redmine_time_spent_humand_readable.plugin_description')
+    description 'Human-readable format for time tracking in Redmine.'
     version '1.0.0'
     url 'https://github.com/Barto-Paja/redmine_time_spent_human_readable'
     author_url 'https://github.com/Barto-Paja'
