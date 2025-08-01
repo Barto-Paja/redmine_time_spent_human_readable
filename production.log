@@ -1,0 +1,129 @@
+F, [2025-08-01T12:41:46.021174 #3403608] FATAL -- : [82f8a02d-2b1b-4b3e-bbe6-a8a3b394b552]   
+[82f8a02d-2b1b-4b3e-bbe6-a8a3b394b552] ActionView::Template::Error (undefined local variable or method `f' for #<ActionView::Base:0x00000000018a38>):
+[82f8a02d-2b1b-4b3e-bbe6-a8a3b394b552]     1: <%= f.label :time_display_format, 'Format wyświetlania czasu' %>
+[82f8a02d-2b1b-4b3e-bbe6-a8a3b394b552]     2: <%= f.select :time_display_format, 
+[82f8a02d-2b1b-4b3e-bbe6-a8a3b394b552]     3: options_for_select([['1:30 h', 'h:m'], ['1h 30m', 'h_m'], ['1.5h', 'h.m']], @user.time_display_format) %>
+[82f8a02d-2b1b-4b3e-bbe6-a8a3b394b552]   
+[82f8a02d-2b1b-4b3e-bbe6-a8a3b394b552] plugins/redmine_time_spent_human_readable/app/views/users/_user_time_format.html.erb:1
+[82f8a02d-2b1b-4b3e-bbe6-a8a3b394b552] lib/redmine/hook/view_listener.rb:61:in `block (2 levels) in render_on'
+[82f8a02d-2b1b-4b3e-bbe6-a8a3b394b552] lib/redmine/hook/view_listener.rb:59:in `map'
+[82f8a02d-2b1b-4b3e-bbe6-a8a3b394b552] lib/redmine/hook/view_listener.rb:59:in `block in render_on'
+[82f8a02d-2b1b-4b3e-bbe6-a8a3b394b552] lib/redmine/hook.rb:66:in `block (2 levels) in call_hook'
+[82f8a02d-2b1b-4b3e-bbe6-a8a3b394b552] lib/redmine/hook.rb:66:in `each'
+[82f8a02d-2b1b-4b3e-bbe6-a8a3b394b552] lib/redmine/hook.rb:66:in `block in call_hook'
+[82f8a02d-2b1b-4b3e-bbe6-a8a3b394b552] lib/redmine/hook.rb:63:in `call_hook'
+[82f8a02d-2b1b-4b3e-bbe6-a8a3b394b552] lib/redmine/hook.rb:101:in `call_hook'
+[82f8a02d-2b1b-4b3e-bbe6-a8a3b394b552] app/views/my/account.html.erb:65
+[82f8a02d-2b1b-4b3e-bbe6-a8a3b394b552] app/helpers/application_helper.rb:1487:in `labelled_form_for'
+[82f8a02d-2b1b-4b3e-bbe6-a8a3b394b552] app/views/my/account.html.erb:14
+[82f8a02d-2b1b-4b3e-bbe6-a8a3b394b552] lib/redmine/sudo_mode.rb:61:in `sudo_mode'
+F, [2025-08-01T12:44:36.721397 #3403896] FATAL -- : [6700069b-de87-417b-ba23-25b5e923d4b6]   
+[6700069b-de87-417b-ba23-25b5e923d4b6] ActionView::Template::Error (undefined method `time_display_format' for #<User id: 129, login: "RM_GIT", hashed_password: [FILTERED], firstname: "Interfejs", lastname: "RM-GIT", admin: true, status: 1, last_login_on: "2025-07-21 21:18:50.372391000 +0000", language: "pl", auth_source_id: nil, created_on: "2020-01-22 16:43:48.000000000 +0000", updated_on: "2025-02-11 08:01:32.631998000 +0000", type: "User", mail_notification: "only_my_events", salt: "386993abb316d02d9d36e02049e90af4", must_change_passwd: false, passwd_changed_on: "2020-01-22 16:43:48.000000000 +0000", twofa_scheme: nil, twofa_totp_key: nil, twofa_totp_last_used_at: nil, twofa_required: false>):
+[6700069b-de87-417b-ba23-25b5e923d4b6]      5:           ['1:30 h', 'h:m'],
+[6700069b-de87-417b-ba23-25b5e923d4b6]      6:           ['1h 30m', 'h_m'],
+[6700069b-de87-417b-ba23-25b5e923d4b6]      7:           ['1.5h', 'h.m']
+[6700069b-de87-417b-ba23-25b5e923d4b6]      8:         ], @user.time_display_format) %>
+[6700069b-de87-417b-ba23-25b5e923d4b6]      9:   </select>
+[6700069b-de87-417b-ba23-25b5e923d4b6]     10: </p>
+[6700069b-de87-417b-ba23-25b5e923d4b6]   
+[6700069b-de87-417b-ba23-25b5e923d4b6] plugins/redmine_time_spent_human_readable/app/views/users/_user_time_format.html.erb:8
+[6700069b-de87-417b-ba23-25b5e923d4b6] lib/redmine/hook/view_listener.rb:61:in `block (2 levels) in render_on'
+[6700069b-de87-417b-ba23-25b5e923d4b6] lib/redmine/hook/view_listener.rb:59:in `map'
+[6700069b-de87-417b-ba23-25b5e923d4b6] lib/redmine/hook/view_listener.rb:59:in `block in render_on'
+[6700069b-de87-417b-ba23-25b5e923d4b6] lib/redmine/hook.rb:66:in `block (2 levels) in call_hook'
+[6700069b-de87-417b-ba23-25b5e923d4b6] lib/redmine/hook.rb:66:in `each'
+[6700069b-de87-417b-ba23-25b5e923d4b6] lib/redmine/hook.rb:66:in `block in call_hook'
+[6700069b-de87-417b-ba23-25b5e923d4b6] lib/redmine/hook.rb:63:in `call_hook'
+[6700069b-de87-417b-ba23-25b5e923d4b6] lib/redmine/hook.rb:101:in `call_hook'
+[6700069b-de87-417b-ba23-25b5e923d4b6] app/views/my/account.html.erb:65
+[6700069b-de87-417b-ba23-25b5e923d4b6] app/helpers/application_helper.rb:1487:in `labelled_form_for'
+[6700069b-de87-417b-ba23-25b5e923d4b6] app/views/my/account.html.erb:14
+[6700069b-de87-417b-ba23-25b5e923d4b6] lib/redmine/sudo_mode.rb:61:in `sudo_mode'
+F, [2025-08-01T12:49:34.299148 #3403896] FATAL -- : [7c5c92b2-7899-4f18-b265-8901ae9d4580]   
+[7c5c92b2-7899-4f18-b265-8901ae9d4580] ActionView::Template::Error (undefined method `time_display_format' for #<User id: 129, login: "RM_GIT", hashed_password: [FILTERED], firstname: "Interfejs", lastname: "RM-GIT", admin: true, status: 1, last_login_on: "2025-07-21 21:18:50.372391000 +0000", language: "pl", auth_source_id: nil, created_on: "2020-01-22 16:43:48.000000000 +0000", updated_on: "2025-02-11 08:01:32.631998000 +0000", type: "User", mail_notification: "only_my_events", salt: "386993abb316d02d9d36e02049e90af4", must_change_passwd: false, passwd_changed_on: "2020-01-22 16:43:48.000000000 +0000", twofa_scheme: nil, twofa_totp_key: nil, twofa_totp_last_used_at: nil, twofa_required: false>):
+[7c5c92b2-7899-4f18-b265-8901ae9d4580]      5:           ['1:30 h', 'h:m'],
+[7c5c92b2-7899-4f18-b265-8901ae9d4580]      6:           ['1h 30m', 'h_m'],
+[7c5c92b2-7899-4f18-b265-8901ae9d4580]      7:           ['1.5h', 'h.m']
+[7c5c92b2-7899-4f18-b265-8901ae9d4580]      8:         ], @user.time_display_format) %>
+[7c5c92b2-7899-4f18-b265-8901ae9d4580]      9:   </select>
+[7c5c92b2-7899-4f18-b265-8901ae9d4580]     10: </p>
+[7c5c92b2-7899-4f18-b265-8901ae9d4580]   
+[7c5c92b2-7899-4f18-b265-8901ae9d4580] plugins/redmine_time_spent_human_readable/app/views/users/_user_time_format.html.erb:8
+[7c5c92b2-7899-4f18-b265-8901ae9d4580] lib/redmine/hook/view_listener.rb:61:in `block (2 levels) in render_on'
+[7c5c92b2-7899-4f18-b265-8901ae9d4580] lib/redmine/hook/view_listener.rb:59:in `map'
+[7c5c92b2-7899-4f18-b265-8901ae9d4580] lib/redmine/hook/view_listener.rb:59:in `block in render_on'
+[7c5c92b2-7899-4f18-b265-8901ae9d4580] lib/redmine/hook.rb:66:in `block (2 levels) in call_hook'
+[7c5c92b2-7899-4f18-b265-8901ae9d4580] lib/redmine/hook.rb:66:in `each'
+[7c5c92b2-7899-4f18-b265-8901ae9d4580] lib/redmine/hook.rb:66:in `block in call_hook'
+[7c5c92b2-7899-4f18-b265-8901ae9d4580] lib/redmine/hook.rb:63:in `call_hook'
+[7c5c92b2-7899-4f18-b265-8901ae9d4580] lib/redmine/hook.rb:101:in `call_hook'
+[7c5c92b2-7899-4f18-b265-8901ae9d4580] app/views/my/account.html.erb:65
+[7c5c92b2-7899-4f18-b265-8901ae9d4580] app/helpers/application_helper.rb:1487:in `labelled_form_for'
+[7c5c92b2-7899-4f18-b265-8901ae9d4580] app/views/my/account.html.erb:14
+[7c5c92b2-7899-4f18-b265-8901ae9d4580] lib/redmine/sudo_mode.rb:61:in `sudo_mode'
+F, [2025-08-01T12:49:37.416615 #3403896] FATAL -- : [a1f1fa58-d151-4086-b9bd-70c4dbb913cd]   
+[a1f1fa58-d151-4086-b9bd-70c4dbb913cd] ActionView::Template::Error (undefined method `time_display_format' for #<User id: 129, login: "RM_GIT", hashed_password: [FILTERED], firstname: "Interfejs", lastname: "RM-GIT", admin: true, status: 1, last_login_on: "2025-07-21 21:18:50.372391000 +0000", language: "pl", auth_source_id: nil, created_on: "2020-01-22 16:43:48.000000000 +0000", updated_on: "2025-02-11 08:01:32.631998000 +0000", type: "User", mail_notification: "only_my_events", salt: "386993abb316d02d9d36e02049e90af4", must_change_passwd: false, passwd_changed_on: "2020-01-22 16:43:48.000000000 +0000", twofa_scheme: nil, twofa_totp_key: nil, twofa_totp_last_used_at: nil, twofa_required: false>):
+[a1f1fa58-d151-4086-b9bd-70c4dbb913cd]      5:           ['1:30 h', 'h:m'],
+[a1f1fa58-d151-4086-b9bd-70c4dbb913cd]      6:           ['1h 30m', 'h_m'],
+[a1f1fa58-d151-4086-b9bd-70c4dbb913cd]      7:           ['1.5h', 'h.m']
+[a1f1fa58-d151-4086-b9bd-70c4dbb913cd]      8:         ], @user.time_display_format) %>
+[a1f1fa58-d151-4086-b9bd-70c4dbb913cd]      9:   </select>
+[a1f1fa58-d151-4086-b9bd-70c4dbb913cd]     10: </p>
+[a1f1fa58-d151-4086-b9bd-70c4dbb913cd]   
+[a1f1fa58-d151-4086-b9bd-70c4dbb913cd] plugins/redmine_time_spent_human_readable/app/views/users/_user_time_format.html.erb:8
+[a1f1fa58-d151-4086-b9bd-70c4dbb913cd] lib/redmine/hook/view_listener.rb:61:in `block (2 levels) in render_on'
+[a1f1fa58-d151-4086-b9bd-70c4dbb913cd] lib/redmine/hook/view_listener.rb:59:in `map'
+[a1f1fa58-d151-4086-b9bd-70c4dbb913cd] lib/redmine/hook/view_listener.rb:59:in `block in render_on'
+[a1f1fa58-d151-4086-b9bd-70c4dbb913cd] lib/redmine/hook.rb:66:in `block (2 levels) in call_hook'
+[a1f1fa58-d151-4086-b9bd-70c4dbb913cd] lib/redmine/hook.rb:66:in `each'
+[a1f1fa58-d151-4086-b9bd-70c4dbb913cd] lib/redmine/hook.rb:66:in `block in call_hook'
+[a1f1fa58-d151-4086-b9bd-70c4dbb913cd] lib/redmine/hook.rb:63:in `call_hook'
+[a1f1fa58-d151-4086-b9bd-70c4dbb913cd] lib/redmine/hook.rb:101:in `call_hook'
+[a1f1fa58-d151-4086-b9bd-70c4dbb913cd] app/views/my/account.html.erb:65
+[a1f1fa58-d151-4086-b9bd-70c4dbb913cd] app/helpers/application_helper.rb:1487:in `labelled_form_for'
+[a1f1fa58-d151-4086-b9bd-70c4dbb913cd] app/views/my/account.html.erb:14
+[a1f1fa58-d151-4086-b9bd-70c4dbb913cd] lib/redmine/sudo_mode.rb:61:in `sudo_mode'
+F, [2025-08-01T12:49:51.412135 #3404181] FATAL -- : [94b4ee05-f781-4e9b-a631-5fa7e7c3e41a]   
+[94b4ee05-f781-4e9b-a631-5fa7e7c3e41a] ActionView::Template::Error (undefined method `time_display_format' for #<User id: 129, login: "RM_GIT", hashed_password: [FILTERED], firstname: "Interfejs", lastname: "RM-GIT", admin: true, status: 1, last_login_on: "2025-07-21 21:18:50.372391000 +0000", language: "pl", auth_source_id: nil, created_on: "2020-01-22 16:43:48.000000000 +0000", updated_on: "2025-02-11 08:01:32.631998000 +0000", type: "User", mail_notification: "only_my_events", salt: "386993abb316d02d9d36e02049e90af4", must_change_passwd: false, passwd_changed_on: "2020-01-22 16:43:48.000000000 +0000", twofa_scheme: nil, twofa_totp_key: nil, twofa_totp_last_used_at: nil, twofa_required: false>):
+[94b4ee05-f781-4e9b-a631-5fa7e7c3e41a]      5:           ['1:30 h', 'h:m'],
+[94b4ee05-f781-4e9b-a631-5fa7e7c3e41a]      6:           ['1h 30m', 'h_m'],
+[94b4ee05-f781-4e9b-a631-5fa7e7c3e41a]      7:           ['1.5h', 'h.m']
+[94b4ee05-f781-4e9b-a631-5fa7e7c3e41a]      8:         ], @user.time_display_format) %>
+[94b4ee05-f781-4e9b-a631-5fa7e7c3e41a]      9:   </select>
+[94b4ee05-f781-4e9b-a631-5fa7e7c3e41a]     10: </p>
+[94b4ee05-f781-4e9b-a631-5fa7e7c3e41a]   
+[94b4ee05-f781-4e9b-a631-5fa7e7c3e41a] plugins/redmine_time_spent_human_readable/app/views/users/_user_time_format.html.erb:8
+[94b4ee05-f781-4e9b-a631-5fa7e7c3e41a] lib/redmine/hook/view_listener.rb:61:in `block (2 levels) in render_on'
+[94b4ee05-f781-4e9b-a631-5fa7e7c3e41a] lib/redmine/hook/view_listener.rb:59:in `map'
+[94b4ee05-f781-4e9b-a631-5fa7e7c3e41a] lib/redmine/hook/view_listener.rb:59:in `block in render_on'
+[94b4ee05-f781-4e9b-a631-5fa7e7c3e41a] lib/redmine/hook.rb:66:in `block (2 levels) in call_hook'
+[94b4ee05-f781-4e9b-a631-5fa7e7c3e41a] lib/redmine/hook.rb:66:in `each'
+[94b4ee05-f781-4e9b-a631-5fa7e7c3e41a] lib/redmine/hook.rb:66:in `block in call_hook'
+[94b4ee05-f781-4e9b-a631-5fa7e7c3e41a] lib/redmine/hook.rb:63:in `call_hook'
+[94b4ee05-f781-4e9b-a631-5fa7e7c3e41a] lib/redmine/hook.rb:101:in `call_hook'
+[94b4ee05-f781-4e9b-a631-5fa7e7c3e41a] app/views/my/account.html.erb:65
+[94b4ee05-f781-4e9b-a631-5fa7e7c3e41a] app/helpers/application_helper.rb:1487:in `labelled_form_for'
+[94b4ee05-f781-4e9b-a631-5fa7e7c3e41a] app/views/my/account.html.erb:14
+[94b4ee05-f781-4e9b-a631-5fa7e7c3e41a] lib/redmine/sudo_mode.rb:61:in `sudo_mode'
+F, [2025-08-01T12:52:01.181256 #3404453] FATAL -- : [ca995931-c6ab-4e1d-9943-942c179c1367]   
+[ca995931-c6ab-4e1d-9943-942c179c1367] ActionView::Template::Error (undefined method `time_display_format' for #<User id: 129, login: "RM_GIT", hashed_password: [FILTERED], firstname: "Interfejs", lastname: "RM-GIT", admin: true, status: 1, last_login_on: "2025-07-21 21:18:50.372391000 +0000", language: "pl", auth_source_id: nil, created_on: "2020-01-22 16:43:48.000000000 +0000", updated_on: "2025-02-11 08:01:32.631998000 +0000", type: "User", mail_notification: "only_my_events", salt: "386993abb316d02d9d36e02049e90af4", must_change_passwd: false, passwd_changed_on: "2020-01-22 16:43:48.000000000 +0000", twofa_scheme: nil, twofa_totp_key: nil, twofa_totp_last_used_at: nil, twofa_required: false>):
+[ca995931-c6ab-4e1d-9943-942c179c1367]      5:           ['1:30 h', 'h:m'],
+[ca995931-c6ab-4e1d-9943-942c179c1367]      6:           ['1h 30m', 'h_m'],
+[ca995931-c6ab-4e1d-9943-942c179c1367]      7:           ['1.5h', 'h.m']
+[ca995931-c6ab-4e1d-9943-942c179c1367]      8:         ], @user.time_display_format) %>
+[ca995931-c6ab-4e1d-9943-942c179c1367]      9:   </select>
+[ca995931-c6ab-4e1d-9943-942c179c1367]     10: </p>
+[ca995931-c6ab-4e1d-9943-942c179c1367]   
+[ca995931-c6ab-4e1d-9943-942c179c1367] plugins/redmine_time_spent_human_readable/app/views/users/_user_time_format.html.erb:8
+[ca995931-c6ab-4e1d-9943-942c179c1367] lib/redmine/hook/view_listener.rb:61:in `block (2 levels) in render_on'
+[ca995931-c6ab-4e1d-9943-942c179c1367] lib/redmine/hook/view_listener.rb:59:in `map'
+[ca995931-c6ab-4e1d-9943-942c179c1367] lib/redmine/hook/view_listener.rb:59:in `block in render_on'
+[ca995931-c6ab-4e1d-9943-942c179c1367] lib/redmine/hook.rb:66:in `block (2 levels) in call_hook'
+[ca995931-c6ab-4e1d-9943-942c179c1367] lib/redmine/hook.rb:66:in `each'
+[ca995931-c6ab-4e1d-9943-942c179c1367] lib/redmine/hook.rb:66:in `block in call_hook'
+[ca995931-c6ab-4e1d-9943-942c179c1367] lib/redmine/hook.rb:63:in `call_hook'
+[ca995931-c6ab-4e1d-9943-942c179c1367] lib/redmine/hook.rb:101:in `call_hook'
+[ca995931-c6ab-4e1d-9943-942c179c1367] app/views/my/account.html.erb:65
+[ca995931-c6ab-4e1d-9943-942c179c1367] app/helpers/application_helper.rb:1487:in `labelled_form_for'
+[ca995931-c6ab-4e1d-9943-942c179c1367] app/views/my/account.html.erb:14
+[ca995931-c6ab-4e1d-9943-942c179c1367] lib/redmine/sudo_mode.rb:61:in `sudo_mode'

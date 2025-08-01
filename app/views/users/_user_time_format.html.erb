@@ -1,0 +1,10 @@
+<p>
+  <label for="user_time_display_format"><%= l(:label_time_display_format, scope: :redmine_time_spent_humand_readable) %></label>
+  <select name="pref[time_display_format]" id="user_time_display_format">
+  <%= options_for_select([
+        ['1:30 h', 'h:m'],
+        ['1.30 h', 'h_m'],
+        ['1.5 h', 'h.m']
+      ], @user.pref.time_display_format) %>
+</select>
+</p>
